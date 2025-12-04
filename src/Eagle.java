@@ -1,4 +1,4 @@
-public class Eagle extends Animal implements Flyable {
+public class Eagle extends Animal implements Flyable, Moveable {
     public Eagle(String name, int age) {
         super(name,age);
     }
@@ -10,5 +10,10 @@ public class Eagle extends Animal implements Flyable {
     @Override
     public void fly() {
         System.out.println("Eagle is flying!");
+    }
+
+    @Override
+    public void move() {
+
     }
 }

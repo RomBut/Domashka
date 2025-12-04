@@ -1,4 +1,4 @@
-public class Duck extends Animal implements Flyable, Runnable, Swimmable {
+public class Duck extends Animal implements Flyable, Moveable, Swimmable {
 
     public Duck(String name, int age) {
         super(name, age);
@@ -21,7 +21,7 @@ public class Duck extends Animal implements Flyable, Runnable, Swimmable {
 
     }
     @Override
-    public void run() {
+    public void move() {
         System.out.println("Duck is walking!");
     }
 }
