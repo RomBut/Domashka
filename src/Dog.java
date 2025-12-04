@@ -1,21 +1,11 @@
 public class Dog extends Animal implements Moveable, Swimmable {
-
-    public Dog(String name, int age) {
-        this.name = name;
-        this.age = age;
+       public Dog(String name, int age) {
+        super(name,age);
     }
 
     @Override
     void makeSound() {
         System.out.println("Gav!");
-    }
-
-    @Override
-    void print() {
-        makeSound();
-        swim();
-        move();
-        eat();
     }
 
     @Override

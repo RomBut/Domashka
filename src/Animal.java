@@ -1,9 +1,13 @@
 public abstract class Animal {
-    String name;
-    int age;
+     String name;
+     int age;
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     abstract void makeSound();
-    abstract void print();
+
 
     void eat() {
         System.out.println("Animal is eating");
